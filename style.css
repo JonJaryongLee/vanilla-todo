@@ -1,0 +1,134 @@
+/* common */
+* {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* layout */
+.root {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header,
+footer {
+  flex: 1;
+}
+
+main {
+  flex: 7;
+}
+
+/* header */
+header {
+  border-bottom: 1px solid black;
+}
+header > .title {
+  text-align: center;
+  font-family: "Dancing Script", serif;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+/* main */
+main > .todo-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 50px;
+}
+main > .todo-input-wrapper > .todo-input {
+  flex: 4;
+  padding: 10px;
+}
+main > .todo-input-wrapper > button {
+  flex: 1;
+  border: 1px solid black;
+  color: green;
+}
+main > .todo-input-wrapper > button:hover {
+  background-color: green;
+  color: white;
+}
+main > .todo-ul > li {
+  display: flex;
+  margin-bottom: 10px;
+}
+main > .todo-ul > li > input {
+  flex: 1;
+}
+main > .todo-ul > li > p {
+  flex: 5;
+  padding-left: 10px;
+}
+main > .todo-ul > li > button {
+  flex: 1;
+  border: 1px solid black;
+  color: black;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+main > .todo-ul > li > button:hover {
+  background-color: red;
+  color: white;
+}
+main > .special-btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+main > .special-btns-container > .hide-toggle-complete-todos-btn,
+main > .special-btns-container > .delete-all-todos-btn {
+  display: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+main > .special-btns-container > .hide-toggle-complete-todos-btn {
+  margin-left: 10px;
+  border: 1px solid blue;
+  color: blue;
+}
+main > .special-btns-container > .hide-toggle-complete-todos-btn:hover {
+  background-color: blue;
+  color: white;
+}
+main > .special-btns-container > .delete-all-todos-btn {
+  border: 1px solid red;
+  color: red;
+}
+main > .special-btns-container > .delete-all-todos-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* main special classes */
+main > .todo-ul .complete {
+  text-decoration: line-through;
+}
+main > .todo-ul .hide {
+  display: none;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid black;
+}
+footer > .text {
+  text-align: center;
+}

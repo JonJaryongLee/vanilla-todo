@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <h1 class="title">Todo List</h1>
+      </header>
+      <main>
+        <div class="todo-input-wrapper">
+          <input class="todo-input" type="text" />
+          <button>추가</button>
+        </div>
+        <p class="no-todo-text">할 일이 없습니다.</p>
+
+        <ul class="todo-ul">
+          <!-- 
+          <li class="todo-${todo.id}">
+            <input type="checkbox" checked />
+            <p class="complete">${todo.title}</p>
+            <button>X</button>
+          </li>
+        --></ul>
+        <div class="special-btns-container">
+          <button class="hide-toggle-complete-todos-btn hide-mode">
+            완료된 할 일 숨기기
+          </button>
+          <button class="delete-all-todos-btn">모든 할 일 삭제</button>
+        </div>
+      </main>
+      <footer>
+        <p class="text">Copyright © 2025 Jony. All Rights Reserved.</p>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
